@@ -1,0 +1,10 @@
+[INFO][server.go:36] 2022/12/03 15:32:37 start listen...
+[INFO][server.go:54] 2022/12/03 15:36:55 shutting down
+[FATAL][server.go:61] 2022/12/03 15:36:55 accept tcp [::]:5082: use of closed network connection
+[INFO][server.go:36] 2022/12/03 15:37:19 start listen...
+[INFO][server.go:54] 2022/12/03 15:38:00 shutting down
+[FATAL][server.go:61] 2022/12/03 15:38:00 accept tcp [::]:5153: use of closed network connection
+[INFO][server.go:36] 2022/12/03 15:38:02 start listen...
+[INFO][server.go:64] 2022/12/03 15:38:06 accepted link
+[INFO][server.go:54] 2022/12/03 15:41:59 shutting down
+[FATAL][server.go:61] 2022/12/03 15:41:59 accept tcp [::]:6379: use of closed network connection

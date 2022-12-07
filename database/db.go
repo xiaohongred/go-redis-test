@@ -22,11 +22,15 @@ func init()  {
 type DB struct {
 	index int
 	data dict.Dict
+
+	addAof func(line CmdLine)
 }
 
 func makeDB() *DB {
 	res := &DB{
 		data: dict.MakeSyncDict(),
+		addAof: func(line CmdLine) {
+		},
 	}
 	return res
 }

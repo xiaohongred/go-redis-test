@@ -2,6 +2,7 @@ package database
 
 import (
 	"fmt"
+	"go-redis/aof"
 	"go-redis/config"
 	"go-redis/interface/resp"
 	"go-redis/lib/logger"
@@ -14,6 +15,7 @@ import (
 // Database is a set of multiple database set
 type Database struct {
 	dbSet []*DB
+	aofHandler *aof.AofHandler
 }
 
 // NewDatabase creates a redis database,
@@ -22,12 +24,31 @@ func NewDatabase() *Database {
 	if config.Properties.Databases == 0 {
 		config.Properties.Databases = 16
 	}
+
 	mdb.dbSet = make([]*DB, config.Properties.Databases)
 	for i := range mdb.dbSet {
 		singleDB := makeDB()
 		singleDB.index = i
 		mdb.dbSet[i] = singleDB
 	}
+
+	if config.Properties.AppendOnly {
+		aofHandler, err := aof.NewAofHandler(mdb)
+		if err != nil {
+			panic(err)
+		}
+		for _, db := range mdb.dbSet {
+			// avoid closure
+			// db = dbSet[0]
+			// db = dbSet[1] ......       最后， db=dbSet[15], 最后， 所有的db.index 都是15
+			signalDb := db
+			signalDb.addAof = func(line CmdLine) { // 这个匿名方法变成了一个闭包，我们执行这个循环的时候，循环了16次，
+				mdb.aofHandler.AddAof(signalDb.index, line)
+			}
+		}
+		mdb.aofHandler = aofHandler
+	}
+
 	return mdb
 }
 

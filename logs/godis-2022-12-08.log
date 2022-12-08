@@ -1,0 +1,2 @@
+[ERROR][server.go:23] 2022/12/08 12:52:28 listen tcp 0.0.0.0:6379: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+[ERROR][main.go:45] 2022/12/08 12:52:28 listen tcp 0.0.0.0:6379: bind: An attempt was made to access a socket in a way forbidden by its access permissions.

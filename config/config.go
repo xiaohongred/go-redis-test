@@ -26,8 +26,8 @@ type ServerProperties struct {
 	SlaveAnnounceIP   string `cfg:"slave-announce-ip"`
 	ReplTimeout       int    `cfg:"repl-timeout"`
 
-	Peers []string `cfg:"peers"`
-	Self  string   `cfg:"self"`
+	Peers []string `cfg:"peers"` // 集群中其他节点的地址
+	Self  string   `cfg:"self"`  // 本机 redis 节点地址
 }
 
 // Properties holds global config properties

@@ -34,7 +34,7 @@ func (cluster *ClusterDatabase) returnPeerClient(peer string, peerClient *client
 	return pool.ReturnObject(context.Background(), peerClient)
 }
 
-// relay relays command to peer
+// relay relays command to peer  转发到其他节点
 // select db by c.GetDBIndex()
 // cannot call Prepare, Commit, execRollback of self node
 func (cluster *ClusterDatabase) relay(peer string, c resp.Connection, args [][]byte) resp.Reply {

@@ -4,8 +4,6 @@ import "go-redis/interface/resp"
 
 // CmdLine is alias for [][]byte, represents a command line
 type CmdLine = [][]byte
-// CmdFunc represents the handler of a redis command
-type CmdFunc func(cluster *ClusterDatabase, c resp.Connection, cmdAndArgs [][]byte) resp.Reply
 
 func makeRouter() map[string]CmdFunc {
 	routerMap := make(map[string]CmdFunc)
@@ -24,7 +22,7 @@ func makeRouter() map[string]CmdFunc {
 	routerMap["getset"] = defaultFunc
 
 	routerMap["flushdb"] = FlushDB
-
+	routerMap["select"] = execSelect
 	return routerMap
 }
 

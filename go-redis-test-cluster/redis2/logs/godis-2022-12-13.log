@@ -1,0 +1,17 @@
+[ERROR][server.go:23] 2022/12/13 13:18:21 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[ERROR][main.go:45] 2022/12/13 13:18:21 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[ERROR][server.go:23] 2022/12/13 13:18:57 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[ERROR][main.go:45] 2022/12/13 13:18:57 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[ERROR][server.go:23] 2022/12/13 13:19:24 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[ERROR][main.go:45] 2022/12/13 13:19:24 listen tcp 0.0.0.0:6379: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[INFO][server.go:36] 2022/12/13 13:19:51 start listen...
+[INFO][server.go:54] 2022/12/13 13:24:00 shutting down
+[FATAL][server.go:61] 2022/12/13 13:24:00 accept tcp [::]:6380: use of closed network connection
+[INFO][server.go:36] 2022/12/13 13:27:35 start listen...
+[INFO][server.go:54] 2022/12/13 13:39:09 shutting down
+[FATAL][server.go:61] 2022/12/13 13:39:09 accept tcp [::]:6380: use of closed network connection
+[INFO][server.go:36] 2022/12/13 13:44:51 start listen...
+[INFO][server.go:64] 2022/12/13 13:45:20 accepted link
+[INFO][handler.go:81] 2022/12/13 13:46:14 connection closed: 127.0.0.1:14874
+[INFO][server.go:54] 2022/12/13 13:46:20 shutting down
+[FATAL][server.go:61] 2022/12/13 13:46:20 accept tcp [::]:6380: use of closed network connection

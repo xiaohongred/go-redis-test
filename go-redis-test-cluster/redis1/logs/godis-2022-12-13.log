@@ -1,0 +1,43 @@
+[INFO][server.go:36] 2022/12/13 13:17:57 start listen...
+[INFO][server.go:54] 2022/12/13 13:19:00 shutting down
+[FATAL][server.go:61] 2022/12/13 13:19:00 accept tcp [::]:6379: use of closed network connection
+[INFO][server.go:36] 2022/12/13 13:19:18 start listen...
+[INFO][server.go:64] 2022/12/13 13:22:39 accepted link
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:24:02 require multi bulk reply
+[INFO][handler.go:81] 2022/12/13 13:24:02 connection closed: 127.0.0.1:14461
+[INFO][server.go:54] 2022/12/13 13:27:50 shutting down
+[FATAL][server.go:61] 2022/12/13 13:27:50 accept tcp [::]:6379: use of closed network connection
+[INFO][server.go:36] 2022/12/13 13:27:52 start listen...
+[INFO][server.go:64] 2022/12/13 13:27:57 accepted link
+[ERROR][handler.go:92] 2022/12/13 13:28:01 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:28:01 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:28:01 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:28:27 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:28:27 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:28:27 require multi bulk reply
+[INFO][server.go:54] 2022/12/13 13:39:12 shutting down
+[FATAL][server.go:61] 2022/12/13 13:39:12 accept tcp [::]:6379: use of closed network connection
+[INFO][server.go:36] 2022/12/13 13:44:56 start listen...
+[INFO][server.go:64] 2022/12/13 13:45:04 accepted link
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:33 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:40 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:40 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:40 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:41 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:41 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:41 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:53 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:53 require multi bulk reply
+[ERROR][handler.go:92] 2022/12/13 13:45:53 require multi bulk reply
+[INFO][server.go:54] 2022/12/13 13:46:14 shutting down
+[FATAL][server.go:61] 2022/12/13 13:46:14 accept tcp [::]:6379: use of closed network connection

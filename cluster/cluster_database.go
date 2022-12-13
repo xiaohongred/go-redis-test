@@ -46,8 +46,12 @@ func MakeClusterDatabase() *ClusterDatabase {
 	return cluster
 }
 
+// CmdFunc represents the handler of a redis command
+type CmdFunc func(cluster *ClusterDatabase, c resp.Connection, cmdAndArgs [][]byte) resp.Reply
 
 var router = makeRouter()
+
+
 
 func (cluster *ClusterDatabase) Exec(client resp.Connection, args [][]byte) (result resp.Reply) {
 	defer func() {

@@ -33,7 +33,7 @@ func NewStandaloneDatabase() *StandaloneDatabase {
 	}
 
 	if config.Properties.AppendOnly {
-		aofHandler, err := aof.NewAofHandler(mdb)
+		aofHandler, err := aof.NewAOFHandler(mdb)
 		if err != nil {
 			panic(err)
 		}
